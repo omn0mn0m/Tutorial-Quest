@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/level1.unity
+    path: Assets/Scenes/Pre-Game/intro.unity
   - enabled: 1
-    path: Assets/Scenes/level2.unity
+    path: Assets/Scenes/Level 1/level1-a.unity
   - enabled: 1
-    path: Assets/Scenes/level3.unity
+    path: Assets/Scenes/Level 1/level1-b.unity
   - enabled: 1
-    path: Assets/Scenes/level4.unity
+    path: Assets/Scenes/Pre-Game/mainMenu.unity
   - enabled: 1
-    path: Assets/Scenes/level5.unity
+    path: Assets/Scenes/Level 1/level1-d.unity
   - enabled: 1
-    path: Assets/Scenes/mainMenu.unity
+    path: Assets/Scenes/Level 1/level1-c.unity

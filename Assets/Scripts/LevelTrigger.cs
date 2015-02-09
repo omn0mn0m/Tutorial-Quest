@@ -4,7 +4,7 @@ using System.Collections;
 public class LevelTrigger : MonoBehaviour {
 
 	public GameObject target;
-	public int level;
+	public string level;
 
 	// Use this for initialization
 	void Start () {
@@ -17,9 +17,12 @@ public class LevelTrigger : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log (other.gameObject.name);
 		if (other.tag == "Player") {
-			Application.LoadLevel(level);
+			GoToLevel (level);
 		}
+	}
+	
+	public void GoToLevel(string level) {
+		Application.LoadLevel(level);
 	}
 }

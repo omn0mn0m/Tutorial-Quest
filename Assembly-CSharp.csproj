@@ -64,10 +64,13 @@
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\TiltInput.cs" />
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\TouchPad.cs" />
      <Compile Include="Assets\SampleAssets\CrossPlatformInput\Scripts\VirtualInput.cs" />
-     <Compile Include="Assets\Scripts\DialogueManager.cs" />
-     <Compile Include="Assets\Scripts\Dialogues.cs" />
+     <Compile Include="Assets\Scripts\DeathGear.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueManager.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Dialogues.cs" />
      <Compile Include="Assets\Scripts\LevelTrigger.cs" />
      <Compile Include="Assets\Scripts\Parallaxing.cs" />
+     <Compile Include="Assets\Scripts\PreGameIntro.cs" />
+     <Compile Include="Assets\Scripts\ShowDialogue.cs" />
      <None Include="Assets\SampleAssets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.0/UnityEngine.UI.dll</HintPath>

@@ -22,7 +22,9 @@ namespace UnitySampleAssets._2D
         private Transform ceilingCheck; // A position marking where to check for ceilings
         private float ceilingRadius = .01f; // Radius of the overlap circle to determine if the player can stand up
         private Animator anim; // Reference to the player's animator component.
-
+		
+		private bool canDoubleJump = true;
+		private bool hasDoubleJumped = false;
 
         private void Awake()
         {
@@ -44,7 +46,7 @@ namespace UnitySampleAssets._2D
         }
 
 
-        public void Move(float move, bool crouch, bool jump)
+        public void Move(float move, bool crouch, bool jump, bool doubleJump)
         {
 
 
@@ -81,12 +83,24 @@ namespace UnitySampleAssets._2D
                     Flip();
             }
             // If the player should jump...
-            if (grounded && jump && anim.GetBool("Ground"))
+			if ((grounded && jump && anim.GetBool("Ground")) || (doubleJump && canDoubleJump))
             {
+				if (hasDoubleJumped) {
+					canDoubleJump = grounded;
+					if (canDoubleJump) {
+						hasDoubleJumped = false;
+					}
+				}
+                
                 // Add a vertical force to the player.
                 grounded = false;
                 anim.SetBool("Ground", false);
                 rigidbody2D.AddForce(new Vector2(0f, jumpForce));
+                // Sets double jump boolean
+                if (doubleJump && canDoubleJump) {
+                	canDoubleJump = false;
+                	hasDoubleJumped = true;
+                }
             }
         }
 

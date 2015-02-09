@@ -7,6 +7,7 @@ TagManager:
   - Dangerous
   - Smelly
   - Fire
+  - DialogueBox
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -41,10 +42,6 @@ TagManager:
   User Layer 30: 
   User Layer 31: 
   m_SortingLayers:
-  - name: Default
-    userID: 0
-    uniqueID: 0
-    locked: 0
   - name: Background
     userID: 1
     uniqueID: 1093696345
@@ -60,6 +57,14 @@ TagManager:
   - name: Foreground
     userID: 2
     uniqueID: 1859086223
+    locked: 0
+  - name: Default
+    userID: 0
+    uniqueID: 0
+    locked: 0
+  - name: Platform
+    userID: 6
+    uniqueID: 2284563397
     locked: 0
   - name: Player
     userID: 5
